@@ -72,8 +72,90 @@ const productos = [
     crearProducto('component12', 'Teclado Mecánico Gamer RGB', 34990, 'Teclado mecánico con switches rojos e iluminación RGB personalizable.',
         [['Categoría', 'Teclados y mouse'], ['Tipo', 'Mecánico'], ['Switch', 'Rojo'], ['Iluminación', 'RGB'], ['Conexión', 'USB']]),
     crearProducto('component13', 'Windows 11 Home Licencia Digital', 139990, 'Licencia digital de Windows 11 Home para instalar en tu equipo armado.',
-        [['Categoría', 'Sistemas operativos'], ['Marca', 'Microsoft'], ['Versión', 'Windows 11 Home'], ['Licencia', 'Digital'], ['Arquitectura', '64 bits']], 'IMG/so.jpeg')
+        [['Categoría', 'Sistemas operativos'], ['Marca', 'Microsoft'], ['Versión', 'Windows 11 Home'], ['Licencia', 'Digital'], ['Arquitectura', '64 bits']], 'IMG/so.jpeg'),
+    crearProducto('component14', 'Procesador AMD Ryzen 3 4100', 69990, 'Procesador quad-core eficiente con solución térmica Wraith Stealth incluida.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM4'], ['Núcleos / Hilos', '4 / 8'], ['Frecuencia base', '3.8 GHz']], 'IMG/component13.png'),
+    crearProducto('component15', 'Procesador AMD Ryzen 5 4500', 89990, 'Procesador de 6 núcleos Serie 4000 para presupuestos ajustados y buen rendimiento.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM4'], ['Núcleos / Hilos', '6 / 12'], ['Frecuencia base', '3.6 GHz']], 'IMG/component14.jpg'),
+    crearProducto('component16', 'Procesador AMD Ryzen 5 5500', 99990, 'Excelente procesador Serie 5000 para armado de PCs económicos.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM4'], ['Núcleos / Hilos', '6 / 12'], ['Frecuencia máxima', '4.2 GHz']], 'IMG/component15.webp'),
+    crearProducto('component17', 'Procesador AMD Ryzen 5 5600X', 149990, 'Procesador de 6 núcleos y 12 hilos hasta 4.6 GHz max boost con 35 MB de caché.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM4'], ['Núcleos / Hilos', '6 / 12'], ['Frecuencia máxima', '4.6 GHz']], 'IMG/component16.webp'),
+    crearProducto('component18', 'Procesador AMD Ryzen 5 7600 (OEM)', 185990, 'Procesador Ryzen 5 7000 Series con 6 núcleos y gráficos AMD Radeon integrados.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM5'], ['Núcleos / Hilos', '6 / 12'], ['Frecuencia base', '3.80 GHz']], 'IMG/component17.webp'),
+    crearProducto('component19', 'Procesador AMD Ryzen 7 5700X', 179990, 'Procesador de 8 núcleos de alto rendimiento Serie 5000 para multitarea pesada.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM4'], ['Núcleos / Hilos', '8 / 16'], ['Frecuencia máxima', '4.6 GHz']], 'IMG/component18.webp'),
+    crearProducto('component20', 'Procesador AMD Ryzen 7 7700X', 289990, 'Procesador de 8 núcleos para socket AM5 pensado para máxima velocidad en juegos.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM5'], ['Núcleos / Hilos', '8 / 16'], ['Frecuencia máxima', '5.4 GHz']], 'IMG/component19.jpg'),
+    crearProducto('component21', 'Procesador AMD Ryzen 9 7900X', 429990, 'Procesador de alto rendimiento 7000 Series con 12 núcleos para renderizado y streaming.',
+        [['Categoría', 'Procesadores'], ['Marca', 'AMD'], ['Socket', 'AM5'], ['Núcleos / Hilos', '12 / 24'], ['Frecuencia máxima', '5.6 GHz']], 'IMG/component20.webp'),
+    crearProducto('component22', 'Procesador Intel Core i3-12100F (12th Gen)', 84990, 'Procesador de 12va generación Intel, excelente relación calidad-precio.',
+        [['Categoría', 'Procesadores'], ['Marca', 'Intel'], ['Socket', 'LGA1700'], ['Núcleos / Hilos', '4 / 8'], ['Frecuencia máxima', '4.3 GHz']], 'IMG/component21.webp'),
+    crearProducto('component23', 'Procesador Intel Core i3-13100F (13th Gen)', 94990, 'Procesador de 13ra generación Intel ideal para gaming de entrada.',
+        [['Categoría', 'Procesadores'], ['Marca', 'Intel'], ['Socket', 'LGA1700'], ['Núcleos / Hilos', '4 / 8'], ['Frecuencia máxima', '4.5 GHz']], 'IMG/component22.jpg'),
+    crearProducto('component25', 'Procesador Intel Core i5-13600KF (13th Gen)', 279990, 'Procesador Intel Core i5 de 13ra generación desbloqueado para overclocking.',
+        [['Categoría', 'Procesadores'], ['Marca', 'Intel'], ['Socket', 'LGA1700'], ['Núcleos / Hilos', '14 / 20'], ['Frecuencia máxima', '5.1 GHz']], 'IMG/component25.jpg'),
+    crearProducto('component26', 'Procesador Intel Core i9-12900K (12th Gen)', 389990, 'Procesador de gama alta Intel 12va generación para estaciones de trabajo y gaming extremo.',
+        [['Categoría', 'Procesadores'], ['Marca', 'Intel'], ['Socket', 'LGA1700'], ['Núcleos / Hilos', '16 / 24'], ['Frecuencia máxima', '5.2 GHz']], 'IMG/component26.webp'),
+    crearProducto('component27', 'Procesador Intel Core i9-13900K (13th Gen)', 499990, 'Procesador tope de gama Intel 13ra generación con arquitectura híbrida avanzada.',
+        [['Categoría', 'Procesadores'], ['Marca', 'Intel'], ['Socket', 'LGA1700'], ['Núcleos / Hilos', '24 / 32'], ['Frecuencia máxima', '5.8 GHz']], 'IMG/component27.jpg'),
+
+    crearProducto('component28', 'Tarjeta de Video NVIDIA GeForce GTX 1650 4GB', 149990, 'Tarjeta gráfica compacta de entrada ideal para juegos esports.',
+        [['Categoría', 'Tarjetas de video'], ['Marca', 'NVIDIA'], ['Memoria', '4GB GDDR6'], ['Interfaz', 'PCIe 3.0'], ['Consumo', '75 W']],'IMG/component28.jpg'),
+    crearProducto('component29', 'Tarjeta de Video NVIDIA GeForce RTX 3050 8GB', 219990, 'Entrada a la tecnología Ray Tracing y DLSS de NVIDIA.',
+        [['Categoría', 'Tarjetas de video'], ['Marca', 'NVIDIA'], ['Memoria', '8GB GDDR6'], ['Interfaz', 'PCIe 4.0'], ['Consumo', '130 W']]),
+    crearProducto('component30', 'Tarjeta de Video NVIDIA GeForce RTX 4060 Ti 8GB', 429990, 'Rendimiento fluido en 1080p y 1440p con arquitectura Ada Lovelace.',
+        [['Categoría', 'Tarjetas de video'], ['Marca', 'NVIDIA'], ['Memoria', '8GB GDDR6'], ['Interfaz', 'PCIe 4.0'], ['Consumo', '160 W']],'IMG/component30.jpg'),
+    crearProducto('component31', 'Tarjeta de Video AMD Radeon RX 6650 XT 8GB', 259990, 'Excelente relación precio-rendimiento para juego full HD.',
+        [['Categoría', 'Tarjetas de video'], ['Marca', 'AMD'], ['Memoria', '8GB GDDR6'], ['Interfaz', 'PCIe 4.0'], ['Consumo', '180 W']],'IMG/component31.jpg'),
+    crearProducto('component32', 'Tarjeta de Video AMD Radeon RX 7600 XT 16GB', 369990, 'Memoria VRAM ampliada para texturas en alta resolución.',
+        [['Categoría', 'Tarjetas de video'], ['Marca', 'AMD'], ['Memoria', '16GB GDDR6'], ['Interfaz', 'PCIe 4.0'], ['Consumo', '190 W']]),
+
+    crearProducto('component33', 'Memoria RAM Kingston Fury Beast 16GB DDR4 2666MHz', 429990, 'Módulo estándar fiable para plataformas DDR4.',
+        [['Categoría', 'Memoria RAM'], ['Marca', 'Kingston'], ['Capacidad', '16GB'], ['Tipo', 'DDR4'], ['Frecuencia', '2666 MHz']],'IMG/component33.jpg'),
+    crearProducto('component34', 'Memoria RAM Corsair Vengeance RGB PRO 16GB (2x8GB) DDR4 3200MHz', 64990, 'Kit Dual Channel con iluminación RGB avanzada.',
+        [['Categoría', 'Memoria RAM'], ['Marca', 'Corsair'], ['Capacidad', '16GB (2x8GB)'], ['Tipo', 'DDR4'], ['Frecuencia', '3200 MHz']]),
+    crearProducto('component35', 'Memoria RAM TeamGroup T-Force Delta RGB 32GB (2x16GB) DDR4 3600MHz', 99990, 'Capacidad amplia y alta frecuencia en DDR4 con disipador térmico.',
+        [['Categoría', 'Memoria RAM'], ['Marca', 'TeamGroup'], ['Capacidad', '32GB (2x16GB)'], ['Tipo', 'DDR4'], ['Frecuencia', '3600 MHz']]),
+    crearProducto('component36', 'Memoria RAM Corsair Vengeance 32GB (2x16GB) DDR5 5600MHz', 129990, 'Rendimiento DDR5 de nueva generación para multitarea pesada.',
+        [['Categoría', 'Memoria RAM'], ['Marca', 'Corsair'], ['Capacidad', '32GB (2x16GB)'], ['Tipo', 'DDR5'], ['Frecuencia', '5600 MHz']],'IMG/component36.jpg'),
+    crearProducto('component37', 'Memoria RAM G.Skill Trident Z5 RGB 32GB (2x16GB) DDR5 6000MHz', 159990, 'Frecuencia extrema optimizada para setups de alto nivel.',
+        [['Categoría', 'Memoria RAM'], ['Marca', 'G.Skill'], ['Capacidad', '32GB (2x16GB)'], ['Tipo', 'DDR5'], ['Frecuencia', '6000 MHz']]),
+
+    crearProducto('component38', 'SSD SATA Kingston A400 240GB', 22990, 'Almacenamiento sólido formato 2.5 pulgadas para acelerar equipos.',
+        [['Categoría', 'Almacenamiento'], ['Marca', 'Kingston'], ['Capacidad', '240GB'], ['Interfaz', 'SATA III'], ['Lectura secuencial', '500 MB/s']]),
+    crearProducto('component39', 'SSD SATA Crucial MX500 1TB', 68990, 'SATA de alta fiabilidad con protección contra pérdida de energía.',
+        [['Categoría', 'Almacenamiento'], ['Marca', 'Crucial'], ['Capacidad', '1TB'], ['Interfaz', 'SATA III'], ['Lectura secuencial', '560 MB/s']]),
+    crearProducto('component40', 'SSD NVMe Crucial P3 1TB', 64990, 'Unidad de estado sólido NVMe M.2 rápida para gaming y archivos.',
+        [['Categoría', 'Almacenamiento'], ['Marca', 'Crucial'], ['Capacidad', '1TB'], ['Interfaz', 'PCIe 3.0 NVMe'], ['Lectura secuencial', '3500 MB/s']]),
+    crearProducto('component41', 'SSD NVMe Western Digital Black SN850X 1TB', 109990, 'Disco NVMe PCIe 4.0 ultra rápido optimizado para gamers.',
+        [['Categoría', 'Almacenamiento'], ['Marca', 'Western Digital'], ['Capacidad', '1TB'], ['Interfaz', 'PCIe 4.0 NVMe'], ['Lectura secuencial', '7300 MB/s']]),
+    crearProducto('component42', 'Disco Duro HDD Seagate Barracuda 2TB 3.5"', 54990, 'Disco duro mecánico tradicional para almacenamiento secundario de archivos.',
+        [['Categoría', 'Almacenamiento'], ['Marca', 'Seagate'], ['Capacidad', '2TB'], ['Interfaz', 'SATA III 3.5"'], ['RPM', '7200 RPM']]),
+
+    crearProducto('component43', 'Fuente de Poder EVGA 700 BR 700W 80 Plus Bronze', 67990, 'Potencia continua y confiable con certificación 80 Plus Bronze.',
+        [['Categoría', 'Fuentes de poder'], ['Marca', 'EVGA'], ['Potencia', '700 W'], ['Certificación', '80 Plus Bronze'], ['Formato', 'ATX']],'IMG/component43.jpg'),
+    crearProducto('component44', 'Fuente de Poder Corsair RM650 650W 80 Plus Gold Modular', 104990, 'Cableado totalmente modular y eficiencia Gold supersilenciosa.',
+        [['Categoría', 'Fuentes de poder'], ['Marca', 'Corsair'], ['Potencia', '650 W'], ['Certificación', '80 Plus Gold Modular'], ['Formato', 'ATX']],'IMG/component44.avif'),
+    crearProducto('component45', 'Fuente de Poder Cooler Master MWE 750W 80 Plus Gold', 109990, 'Suministro eléctrico estable preparado para tarjetas exigentes.',
+        [['Categoría', 'Fuentes de poder'], ['Marca', 'Cooler Master'], ['Potencia', '750 W'], ['Certificación', '80 Plus Gold'], ['Formato', 'ATX']],'IMG/component45.jpg'),
+    crearProducto('component46', 'Fuente de Poder DeepCool PK650D 650W 80 Plus Bronze', 56990, 'Fuente eficiente con protecciones eléctricas completas.',
+        [['Categoría', 'Fuentes de poder'], ['Marca', 'DeepCool'], ['Potencia', '650 W'], ['Certificación', '80 Plus Bronze'], ['Formato', 'ATX']]),
+    crearProducto('component47', 'Fuente de Poder Seasonic Focus GX-850 850W 80 Plus Gold Modular', 149990, 'Calidad de construcción premium con 10 años de garantía.',
+        [['Categoría', 'Fuentes de poder'], ['Marca', 'Seasonic'], ['Potencia', '850 W'], ['Certificación', '80 Plus Gold Modular'], ['Formato', 'ATX']],'IMG/component47.jpg'),
+
+    crearProducto('component48', 'Cooler CPU Cooler Master Hyper 212 Halo ARGB', 39990, 'Iconico disipador por aire renovado con ventilador ARGB Halo.',
+        [['Categoría', 'Refrigeración'], ['Tipo', 'Aire'], ['Heatpipes', '4'], ['Iluminación', 'ARGB'], ['Compatibilidad', 'Intel / AMD']]),
+    crearProducto('component49', 'Cooler CPU Noctua NH-D15 chromax.black', 129990, 'El disipador de aire tope de gama en acabado negro mate silencioso.',
+        [['Categoría', 'Refrigeración'], ['Tipo', 'Aire de doble torre'], ['Heatpipes', '6'], ['Color', 'Negro Chromax'], ['Compatibilidad', 'Universal']]),
+    crearProducto('component50', 'Refrigeración Líquida DeepCool LS520 240mm ARGB', 89990, 'Bomba de cuarta generación con diseño de espejo infinito ARGB.',
+        [['Categoría', 'Refrigeración'], ['Tipo', 'Líquida AIO'], ['Radiador', '240mm'], ['Iluminación', 'ARGB'], ['Compatibilidad', 'Universal']],'IMG/component50.avif'),
+    crearProducto('component51', 'Refrigeración Líquida DeepCool LT720 360mm ARGB', 124990, 'Radiador de 360mm con estética tridimensional de espejo cúbico.',
+        [['Categoría', 'Refrigeración'], ['Tipo', 'Líquida AIO'], ['Radiador', '360mm'], ['Iluminación', 'ARGB'], ['Compatibilidad', 'Universal']]),
+    crearProducto('component52', 'Refrigeración Líquida NZXT Kraken 360 RGB', 219990, 'Sistema AIO con pantalla LCD personalizable y ventiladores RGB.',
+        [['Categoría', 'Refrigeración'], ['Tipo', 'Líquida AIO'], ['Radiador', '360mm'], ['Pantalla', 'LCD 1.54"'], ['Compatibilidad', 'Universal']],'IMG/component52.webp')
 ];
+
 
 const buscar = id => productos.find(p => p.id === id);
 const categoria = p => p.specs[0][0] === 'Categoría' ? p.specs[0][1] : 'PC armado';
@@ -333,20 +415,90 @@ const reglasFiltro = {
     so: ['licencia']
 };
 
+const nombresCategorias = {
+    cpu: 'Procesadores (CPU)',
+    gpu: 'Tarjetas de Video (GPU)',
+    ram: 'Memorias RAM',
+    almacenamiento: 'Almacenamiento (SSD/HDD)',
+    fuente: 'Fuentes de Poder',
+    refrigeracion: 'Refrigeración / Ventilación',
+    so: 'Sistemas Operativos'
+};
+
+const obtenerTextoCompatibilidad = p => {
+    const specsMap = new Map(p.specs);
+    const compat = [];
+
+    if (specsMap.has('Socket')) compat.push(`Socket ${specsMap.get('Socket')}`);
+    if (specsMap.has('Tipo')) compat.push(`Tipo ${specsMap.get('Tipo')}`);
+    if (specsMap.has('Memoria')) compat.push(specsMap.get('Memoria'));
+    if (specsMap.has('Interfaz')) compat.push(specsMap.get('Interfaz'));
+    if (specsMap.has('Compatibilidad')) compat.push(specsMap.get('Compatibilidad'));
+    if (specsMap.has('Formato')) compat.push(`Formato ${specsMap.get('Formato')}`);
+    if (specsMap.has('Certificación')) compat.push(specsMap.get('Certificación'));
+    if (specsMap.has('Licencia')) compat.push(`Licencia ${specsMap.get('Licencia')}`);
+
+    if (compat.length) {
+        return `Compatibilidad: ${compat.join(' | ')}`;
+    }
+
+    if (p.id.startsWith('pc')) {
+        return 'Compatibilidad: Sistema preensamblado listo para usar';
+    }
+
+    return 'Compatibilidad: Estándar ATX / Universal';
+};
+
 function ejecutarFiltroDeComponentes() {
     const contenedor = $('resultados-compatibles');
     if (!contenedor) return;
     const seleccionadas = [...document.querySelectorAll('input[name="componente"]:checked')].map(cb => cb.value);
+    const soloCompatibles = $('soloCompatibles')?.checked;
 
     if (!seleccionadas.length) {
         contenedor.innerHTML = '<p><em>Por favor, selecciona al menos una categoría de componente.</em></p>';
         return;
     }
 
-    const componentes = productos
-        .filter(p => p.id.startsWith('component') && seleccionadas.some(cat =>
-            reglasFiltro[cat]?.some(t => p.nombre.toLowerCase().includes(t)) || categoria(p).toLowerCase().includes(cat)))
-        .sort((a, b) => a.precio - b.precio);
+    let componentes = productos.filter(p => {
+        if (!p.id.startsWith('component')) return false;
+        return seleccionadas.some(cat => {
+            const catNombre = categoria(p).toLowerCase();
+            const nombreP = p.nombre.toLowerCase();
+            if (cat === 'cpu') return catNombre.includes('procesador') || nombreP.includes('procesador') || nombreP.includes('ryzen') || nombreP.includes('intel');
+            if (cat === 'gpu') return catNombre.includes('tarjetas de video') || nombreP.includes('tarjeta de video') || nombreP.includes('rtx') || nombreP.includes('gtx') || nombreP.includes('radeon');
+            if (cat === 'ram') return catNombre.includes('memoria ram') || nombreP.includes('memoria ram') || nombreP.includes('ddr4') || nombreP.includes('ddr5');
+            if (cat === 'almacenamiento') return catNombre.includes('almacenamiento') || nombreP.includes('ssd') || nombreP.includes('disco duro');
+            if (cat === 'fuente') return catNombre.includes('fuentes de poder') || nombreP.includes('fuente de poder');
+            if (cat === 'refrigeracion') return catNombre.includes('refrigeración') || nombreP.includes('cooler') || nombreP.includes('refrigeración');
+            if (cat === 'so') return catNombre.includes('sistemas operativos') || nombreP.includes('windows');
+            return false;
+        });
+    });
+
+    if (soloCompatibles) {
+        const tieneAM4 = componentes.some(p => p.specs.some(s => s[1].toLowerCase().includes('am4')));
+        const tieneAM5 = componentes.some(p => p.specs.some(s => s[1].toLowerCase().includes('am5')));
+        const tieneLGA1700 = componentes.some(p => p.specs.some(s => s[1].toLowerCase().includes('lga1700')));
+
+        componentes = componentes.filter(p => {
+            const specsTexto = JSON.stringify(p.specs).toLowerCase();
+            if (tieneAM4) {
+                if (specsTexto.includes('am5') || specsTexto.includes('lga1700')) return false;
+                if (specsTexto.includes('ddr5') && !specsTexto.includes('ddr4')) return false;
+            }
+            if (tieneAM5) {
+                if (specsTexto.includes('am4') || specsTexto.includes('lga1700')) return false;
+                if (specsTexto.includes('ddr4')) return false;
+            }
+            if (tieneLGA1700) {
+                if (specsTexto.includes('am4') || specsTexto.includes('am5')) return false;
+            }
+            return true;
+        });
+    }
+
+    componentes.sort((a, b) => a.precio - b.precio);
 
     const fila = (p, clase, enlace) => `
         <div class="card-producto-filtro ${clase}">
@@ -355,6 +507,9 @@ function ejecutarFiltroDeComponentes() {
                 <div>
                     <h4>${p.nombre}</h4>
                     <p>${p.descripcion}</p>
+                    <small style="display: inline-block; margin-top: 5px; color: #15803d; font-weight: 600; background: #f0fdf4; padding: 3px 8px; border-radius: 4px; border: 1px solid #bbf7d0;">
+                        ✓ ${obtenerTextoCompatibilidad(p)}
+                    </small>
                 </div>
             </div>
             <div class="filtro-precio">
@@ -363,10 +518,41 @@ function ejecutarFiltroDeComponentes() {
             </div>
         </div>`;
 
+    let htmlDivisiones = '';
+
+    seleccionadas.forEach(cat => {
+        const compsCat = componentes.filter(p => {
+            const catNombre = categoria(p).toLowerCase();
+            const nombreP = p.nombre.toLowerCase();
+            if (cat === 'cpu') return catNombre.includes('procesador') || nombreP.includes('procesador') || nombreP.includes('ryzen') || nombreP.includes('intel');
+            if (cat === 'gpu') return catNombre.includes('tarjetas de video') || nombreP.includes('tarjeta de video') || nombreP.includes('rtx') || nombreP.includes('gtx') || nombreP.includes('radeon');
+            if (cat === 'ram') return catNombre.includes('memoria ram') || nombreP.includes('memoria ram') || nombreP.includes('ddr4') || nombreP.includes('ddr5');
+            if (cat === 'almacenamiento') return catNombre.includes('almacenamiento') || nombreP.includes('ssd') || nombreP.includes('disco duro');
+            if (cat === 'fuente') return catNombre.includes('fuentes de poder') || nombreP.includes('fuente de poder');
+            if (cat === 'refrigeracion') return catNombre.includes('refrigeración') || nombreP.includes('cooler') || nombreP.includes('refrigeración');
+            if (cat === 'so') return catNombre.includes('sistemas operativos') || nombreP.includes('windows');
+            return false;
+        });
+
+        if (compsCat.length) {
+            htmlDivisiones += `
+                <div class="mini-division-categoria" style="margin-top: 25px; margin-bottom: 15px; border-bottom: 2px solid var(--borde, #e2e8f0); padding-bottom: 8px;">
+                    <h4 style="margin: 0; color: var(--primario, #1e3a8a); font-size: 1.1rem;">
+                        ${nombresCategorias[cat] || cat}
+                    </h4>
+                </div>
+                <div class="lista-filtrada-grid">
+                    ${compsCat.map(p => fila(p, '', 'Ver detalle')).join('')}
+                </div>`;
+        }
+    });
+
     contenedor.innerHTML = `
-        <h3 class="filtro-titulo">Componentes individuales encontrados (Ordenados por menor precio):</h3>
-        ${componentes.length ? `<div class="lista-filtrada-grid">${componentes.map(p => fila(p, '', 'Ver detalle')).join('')}</div>` : '<p><em>No hay componentes sueltos para esta selección específica.</em></p>'}
-        <h3 class="filtro-titulo filtro-pcs">¿Prefieres ahorrar tiempo? Te sugerimos estas PCs ya armadas y listas para usar:</h3>
+        <h3 class="filtro-titulo">Componentes encontrados organizados por categoría y ordenados por menor precio:</h3>
+        ${htmlDivisiones || '<p><em>No hay componentes sueltos compatibles para esta selección específica.</em></p>'}
+        <div class="mini-division-categoria" style="margin-top: 35px; margin-bottom: 15px; border-bottom: 2px solid var(--borde, #e2e8f0); padding-bottom: 8px;">
+            <h4 style="margin: 0; color: #1e3a8a; font-size: 1.1rem;">Sugerencias de PCs Armadas Compatibles</h4>
+        </div>
         <div class="lista-filtrada-grid">${productos.filter(p => p.id.startsWith('pc')).map(p => fila(p, 'pc-armada', 'Ver PC Armada')).join('')}</div>`;
 }
 
