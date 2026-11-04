@@ -5,6 +5,23 @@ const formatoPrecio = valor => '$' + valor.toLocaleString('es-CL');
 const avisar = (el, texto, ok) => { el.textContent = texto; el.className = `mensaje-compra ${ok ? 'mensaje-exito' : 'mensaje-error'}`; };
 const idProducto = new URLSearchParams(location.search).get('id');
 
+document.querySelectorAll('.dropdown .dropbtn').forEach(btn => {
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const dropdown = btn.parentElement;
+        document.querySelectorAll('.dropdown').forEach(d => {
+            if (d !== dropdown) d.classList.remove('activo-dropdown');
+        });
+        dropdown.classList.toggle('activo-dropdown');
+    });
+});
+
+window.addEventListener('click', () => {
+    document.querySelectorAll('.dropdown').forEach(d => {
+        d.classList.remove('activo-dropdown');
+    });
+});
+
 const equipo = [
     { nombre: 'Vicente Leiva', rol: 'Desarrollador HTML, CSS y JavaScript', foto: 'IMG/yo.jpg', descripcion: 'Especializado en el dominio de código y diseño web.' },
     { nombre: 'Jose Cabello', rol: 'Jefe de ensamblaje', foto: 'IMG/marge.jpg', descripcion: 'Encargado de el ensamblaje, control de calidad y soporte técnico.' },
