@@ -1,0 +1,129 @@
+
+DECLARACIÓN DE USO DE INTELIGENCIA ARTIFICIAL
+Proyecto: Sembler Components
+Módulo: Desarrollo de Aplicaciones Web (DAW) 
+Curso: 4-D
+
+
+1. Herramientas usadas.
+
+Se utilizó Claude como apoyo técnico
+en la programación de algunas funciones de JavaScript y de los
+estilos CSS de una ventana emergente no se utilizaron otras
+herramientas de IA.
+
+
+2. PORCENTAJE DE IA DECLARADO
+
+Porcentaje de IA en el código JavaScript (script.js): 40 %
+(195 de 486 líneas de código no vacías).
+
+Este valor está por debajo del límite máximo permitido (50 %).
+
+Para mayor transparencia, se informan también estos valores:
+
+  Archivo              Líneas no vacías   Líneas con IA     porcentaje
+
+  script.js:                   486              195         40,1 %
+  style.css:                   714               72         10,1 %
+  HTML (7 páginas):            636                0          0 %
+
+  TOTAL REVISADO            1.836              267         14,5 %
+
+Metodología: se contaron las líneas de código no vacías los bloques
+indicados en el punto 3 se contaron completos como asistidos
+por IA, aunque nuestro equipo haya hecho modificaciones posteriores Por
+lo tanto, los porcentajes representan una estimación en si (el
+uso real de IA puede ser igual o menor). El total revisado considera
+solo los archivos HTML, CSS y JS disponibles al momento de calcular
+
+
+3. Detalles de los bloques asistidos con uso de IA.
+
+
+A) JAVASCRIPT (script.js)
+
+ A.1 Filtro de componentes (42 líneas)
+
+       1.Objeto "reglasFiltro": palabras clave que relacionan cada
+       categoría (CPU, GPU, RAM, almacenamiento, fuente
+       refrigeración, sistema operativo) con los productos.
+
+       2.Función "ejecutarFiltroDeComponentes": lee las categorías
+       marcadas, filtra el array de productos, ordena por menor
+       precio, inyecta los resultados en el DOM y sugiere PCs
+       armadas.
+
+       3.Evento del botón "btnFiltrar" que ejecuta el filtro.
+
+ A.2 Inicio de sesión de usuarios (parte de 28 líneas)
+
+     1.Evento "submit" de "form-login": valida correo y contraseña
+       contra la lista de usuarios guardada en localStorage y
+       guarda el usuario activo.
+
+     2.Función "guardarUsuario": actualiza el usuario activo y la
+       lista general de usuarios en localStorage.
+
+     3.Cambio del texto de "nav-cuenta" según el estado de sesión.
+
+     4.Evento del botón "CerrarSesion".
+
+ A.3 Registro de usuarios (parte de 28 líneas)
+     1. Evento "submit" de "form-registro": verifica que el correo
+        no esté repetido y crea la cuenta con su estructura inicial
+        (nombre, apellido, foto y compras).
+
+ A.4 Funciones de administrador (49 líneas)
+
+     1. Creación del usuario administrador por defecto.
+
+     2. Evento "submit" de "form-login-admin": valida las
+       credenciales de administrador y activa la sesión de admin.
+
+     3. Función "renderPanelAdmin": lista los usuarios registrados
+       con sus datos y su historial de compras.
+
+     4. Lógica que oculta los formularios y muestra el panel de
+       administración cuando la sesión es de administrador.
+
+     5. Evento del botón "CerrarSesionAdmin".
+
+ A.5 Bloqueo de compra sin sesión iniciada (76 líneas)
+     - Función "pedirSesion": ventana emergente que aparece cuando
+       el usuario intenta comprar sin haber iniciado sesión.
+       Incluye botón de cierre (X), vistas de inicio de sesión y de
+       creación de cuenta dentro de la misma ventana, validación de
+       datos con mensajes en el DOM (sin alert), cierre con la tecla
+       Escape o con clic fuera de la ventana, e inicio automático de
+       sesión tras registrarse.
+     - Línea en el evento del botón "btnComprar" que llama a
+       "pedirSesion" cuando no existe un usuario activo.
+
+B) CSS (style.css) - 72 líneas
+
+     Estilos de la ventana emergente de A.5:
+     .modal-fondo, .modal-caja, .modal-cerrar, .modal-botones,
+     .modal-form, .modal-enlaces y .modal-enlace.
+
+
+4. Código desarrollado sin uso de IA.
+El resto del proyecto fue desarrollado por el equipo, sin asistencia
+de IA:
+
+  1.Estructura, contenido y metadatos de las páginas HTML.
+
+  2.Hoja de estilos CSS, excepto los estilos del modal (punto B).
+
+  3.JavaScript: array de integrantes y tarjetas del equipo, array de
+    productos y carga dinámica del catálogo y la  vista de producto con
+    sus pestañas, carrito de compras (agregar, cambiar cantidad,
+    quitar, totales), registro de compras en el historial, perfil de
+    usuario (datos personales y foto) y menú con página activa.
+
+
+5. Declaración final    
+
+Declaro con honestidad que la información y declaracón de este archivo
+corresponde al uso real de IA en el proyecto, y que puedo explicar y
+justificar la lógica de todo el código presentado.
