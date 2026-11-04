@@ -47,13 +47,19 @@
                     <label><input type="checkbox" name="componente" value="cpu"> Procesador (CPU)</label>
                     <label><input type="checkbox" name="componente" value="gpu"> Tarjeta de Video (GPU)</label>
                     <label><input type="checkbox" name="componente" value="ram"> Memoria RAM</label>
-                    <label><input type="checkbox" name="componente" value="almacenamiento"> Almacenamiento
-                        (SSD/HDD)</label>
+                    <label><input type="checkbox" name="componente" value="almacenamiento"> Almacenamiento (SSD/HDD)</label>
                     <label><input type="checkbox" name="componente" value="fuente"> Fuente de Poder</label>
-                    <label><input type="checkbox" name="componente" value="refrigeracion"> Refrigeración /
-                        Ventilación</label>
+                    <label><input type="checkbox" name="componente" value="refrigeracion"> Refrigeración / Ventilación</label>
                     <label><input type="checkbox" name="componente" value="so"> Sistema Operativo</label>
                 </div>
+
+                <div class="opciones-filtro" style="margin-top: 15px;">
+                    <label style="background: rgb(240, 248, 255); border-color: var(--azul);">
+                        <input type="checkbox" id="soloCompatibles" name="soloCompatibles"> 
+                        Mostrar únicamente componentes 100% compatibles entre sí
+                    </label>
+                </div>
+
                 <br>
                 <button type="button" id="btnFiltrar">Buscar piezas compatibles</button>
             </form>
@@ -62,8 +68,7 @@
         <section class="block block-columna">
             <h2>Resultados sugeridos (Ordenados por menor precio)</h2>
             <div id="resultados-compatibles">
-                <p><em>Selecciona las partes que necesitas arriba para validar compatibilidad y ver los precios más
-                        bajos.</em></p>
+                <p><em>Selecciona las partes que necesitas arriba para validar compatibilidad y ver los precios más bajos.</em></p>
             </div>
         </section>
     </main>
